@@ -1,5 +1,7 @@
 # Daniil Dziarko
 
+![me](https://ibb.co/y5cg2RB)
+
 ## Contacts
 
 - custik.s@yandex.ru
