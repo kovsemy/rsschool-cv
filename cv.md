@@ -1,6 +1,6 @@
 # Daniil Dziarko
 
-![me](../rsschool-cv/assets/img/me.jpg)
+![photo_me](./assets/img/update_photo.jpg)
 
 ## Contacts
 
