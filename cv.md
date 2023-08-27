@@ -1,6 +1,6 @@
 # Daniil Dziarko
 
-![me](https://ibb.co/y5cg2RB)
+![me](../rsschool-cv/assets/img/me.jpg)
 
 ## Contacts
 
