@@ -5,63 +5,125 @@
 }
 
 :root {
-  --border-color: #000000;
-  /* --border-color: transparent; */
+  --text-1: #333;
+  --text-2: #555;
+  --text-3: #888;
+  --text-4: #ccc;
+  --link: #007acc;
 }
 
 body {
   font-family: 'Inter', sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template: max-content 1fr max-content / max-content 1fr;
+}
+
+.header {
+  display: grid;
+  grid-template: repeat(3, max-content) / 1fr max-content;
+  grid-column: 1 / -1;
+}
+
 .nav {
+  grid-column: 1 / -1;
   background-color: #333333;
 }
 
-.nav__wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 980px;
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 44px;
+  list-style-type: none;
 }
 
-.nav__list {
-  height: 44px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style-type: none;
+.nav__item {
 }
 
 .nav__link {
   text-decoration: none;
-  color: #e0e0e0;
+  color: var(--text-4);
 }
 
 .nav__link:hover {
   color: #ffffff;
 }
 
-.main__container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1190px;
-  border: 1px solid var(--border-color);
+.header__name {
+  align-self: end;
+  margin-left: 56px;
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--text-1);
 }
 
-.section-profile {
-  display: flex;
-  justify-content: space-between;
+.header__job-title {
+  margin-left: 56px;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--text-3);
 }
 
-.section-profile__title {
-  border: 1px solid var(--border-color);
-}
-
-.section-profile__subtitle {
-  border: 1px solid var(--border-color);
-}
-
-.section-profile__photo {
+.header__photo {
+  grid-column-start: 2;
+  grid-row: 2 / -1;
+  margin: 56px;
   width: 128px;
   height: 128px;
   border-radius: 64px;
+}
+
+.aside {
+}
+
+.address {
+  padding: 45px 56px 0 56px;
+  font-style: normal;
+}
+
+.address__list {
+}
+
+.address__item {
+  list-style-type: none;
+  line-height: 150%;
+}
+
+.address__link {
+  color: var(--link);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.main {
+}
+.section {
+}
+.section__title {
+}
+.section__text {
+}
+.section__list {
+}
+.section__item {
+}
+.section__code {
+}
+
+.footer {
+  background-color: #333333;
+  grid-column: 1 / -1;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 100px;
+  height: 50px;
 }
