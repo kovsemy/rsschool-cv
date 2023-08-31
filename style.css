@@ -14,11 +14,13 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  height: 100vh;
 }
 
 .container {
   display: grid;
   grid-template: max-content 1fr max-content / max-content 1fr;
+  height: 100%;
 }
 
 .header {
